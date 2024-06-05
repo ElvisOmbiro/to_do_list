@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="intro" class="intro">
+        <h1>My To-Do List App</h1>
+        <p>A to-do list app that offers privacy when writing tasks, with the ability to erase and retain memory.</p>
+        <a href="https://your-deployed-app-link.com" class="button">Go to App</a>
+    </section>
+    
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-item">
+            <h3>To-Do List</h3>
+            <p>A to-do list application that is used to write down notes that can store and delete memory on command, and that can be private.</p>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p>This to-do list app is designed to help you manage your tasks with a focus on privacy and simplicity. 
+        You can easily add, delete, and retain tasks, making it a versatile tool for personal and professional use.</p>
+        <p>The project was inspired by my habit of taking a lot of notes and my desire for an easy way to take notes, which this application enables.</p>
+        <p>Connect with me:</p>
+        <p>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+        </p>
+    </section>
+    
+    <footer>
+        <p>Contact us: info@todolistapp.com</p>
+        <p>&copy; 2024 My To-Do List App</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
