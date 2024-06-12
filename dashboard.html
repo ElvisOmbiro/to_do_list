@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Welcome, {{ session.username }}</h2>
+    <a href="{{ url_for('manage_todos') }}">Manage Todos</a>
+{% endblock %}
+
