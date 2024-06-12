@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Manage Todos</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.content.label }}<br>
+            {{ form.content(rows=3) }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+    <h3>Your Todos:</h3>
+    <ul>
+        {% for todo in todos %}
+            <li>{{ todo.content }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
